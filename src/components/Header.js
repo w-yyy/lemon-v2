@@ -1,6 +1,15 @@
 import React from 'react';
 import { Box, HStack } from "@chakra-ui/react";
 
+const navLinks = [
+    {name: "Home", url: "/home"},
+    {name: "About", url: "/about"},
+    {name: "Menu", url: "/menu"},
+    {name: "Reservations", url: "/reservation"},
+    {name: "Order Online", url: "/order"},
+    {name: "Login", url: "login"}
+]
+
 const Header = (props) => {
     const handleClick = (e, anchor) => {
         e.preventDefault();
@@ -40,7 +49,12 @@ const Header = (props) => {
                 </nav>
                 <nav>
                     <HStack>
-                        <a href="#home" onClick={(event) => handleClick(event, "home")}>Home</a>
+                        {navLinks.map(navLink => {
+                            return (
+                                <a href={navLink.url} key={navLink.url}>{navLink.name}</a>
+                            )
+                        })}
+                        {/* <a href="#home" onClick={(event) => handleClick(event, "home")}>Home</a> */}
                     </HStack>
                 </nav>
             </Box>
