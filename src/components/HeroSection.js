@@ -13,16 +13,25 @@ const HeroSection = () => {
     return (
         <Box w='full' bg='#495E57'>
             <HStack>
-                <VStack>
-                    <Heading as='h1' size='2xl'>Little Lemon</Heading>
-                    <Heading as='h2' size='xl'>Chicago</Heading>
-                    <Text as='h3' size='lg'>We are a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</Text>
-                </VStack>
+                <Box width='50%' pl='20rem'>
+                    <VStack align='left'>
+                        <Heading as='h1' size='2xl' textColor='#F4CE14'>Little Lemon</Heading>
+                        <Heading as='h2' size='xl' textColor='#FFFFFF'>Chicago</Heading>
+                        <Text as='h3' size='lg' textColor='#FFFFFF' display='-ms-inline-flexbox'>We are a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</Text>
+                    </VStack>
+                </Box>
                 <Image
-                    boxSize='300px'
+                    position='relative'
+                    left='10rem'
+                    right='15rem'
+                    top='3rem'
+                    boxSize='25%'
+                    width='35%'
                     src={heroImage}
                     alt='A plate of fresh bruschetta'
-                    borderRadius={4}
+                    borderRadius='16px'
+                    pr='15rem'
+                    py=''
                 />
             </HStack>
         </Box>
