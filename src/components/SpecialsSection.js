@@ -18,7 +18,7 @@ const specials = [
         title: "Bruschetta",
         price: "$6.49",
         description: "Our Bruschetta is made from grilled bread that has beens meared with garlic paste, seasoned with salt and olive oil, then topped with fresh-cut tomatoes.",
-        getImageSrc: () => require("../images/bruchetta.svg"),
+        getImageSrc: () => require("../images/bruchetta.jpg"),
         imgAlt: "Bruschetta",
       },
       {
@@ -34,7 +34,8 @@ const SpecialsSection = () => {
     return (
         <FullScreenSection
             backgroundColor="#FFFFFF"
-            p={8}
+            px="15rem"
+            py="5rem"
             alignItems="flex-start"
             spacing={8}
         >

@@ -13,7 +13,7 @@ const HeroSection = () => {
     return (
         <Box w='full' bg='#495E57'>
             <HStack>
-                <Box width='50%' pl='20rem'>
+                <Box width='50%' pl='15rem'>
                     <VStack align='left'>
                         <Heading as='h1' size='2xl' textColor='#F4CE14'>Little Lemon</Heading>
                         <Heading as='h2' size='xl' textColor='#FFFFFF'>Chicago</Heading>
@@ -23,13 +23,14 @@ const HeroSection = () => {
                 <Image
                     position='relative'
                     left='10rem'
-                    right='15rem'
+                    right='20rem'
                     top='3rem'
-                    boxSize='25%'
-                    width='35%'
+                    boxSize='300px'
+                    objectFit='cover'
+                    width='40%'
                     src={heroImage}
                     alt='A plate of fresh bruschetta'
-                    borderRadius='16px'
+                    borderRadius={16}
                     pr='15rem'
                     py=''
                 />
